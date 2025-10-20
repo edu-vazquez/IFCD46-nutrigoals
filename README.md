@@ -1,9 +1,9 @@
 # IFCD46-nutrigoals
 
-Objetivo: 
+## Objetivo 
 NutriGoal es una web para el seguimiento de habitos alimenticios y actividades fisicas.
 
-Funcionalidad:
+### Funcionalidad:
 - [ ] El usuario puede crear una cuenta e iniciar sesion.
 - [ ] Poder cargar las necesidades caloricas y de macronutrientes diarias segun los objetivos del usuario.
 - [ ] El usuario podra definir sus necesidades nutricionales en la aplicacion, utilizando formulas estandarizadas, segun su edad, sexo, peso, altura y nivel de actividad fisica.
@@ -18,12 +18,100 @@ Funcionalidad:
 - [ ]  Visualizar lo comido cuanto significa en actividad fisica. Eso se podria elegir la quivalencia con el tipo de actividad. <- INTERESANTE
 - [ ]  Los eccesos en cal diario enviar alarma.
 
-Diseno General y Arquitectura:
+### MOCKUPS
+
+[FIGMA] (https://www.figma.com/design/9MciY2F8rPhQxvWKaUKYMR/NutriGoals?node-id=0-1&m=dev&t=Rs223yUgBAosNcQZ-1)
+
+### TAREAS PRINCIPALES divididas den sprints:
+
+[TRELLO] (https://trello.com/invite/b/68f649e434c65abca57be625/ATTI4f0930a755cd5857f273b4a3e41c29b83AF2183C/)
+
+SPRINT 1:
+- [ ] Configuracion del entorno de desarrollo.
+- [ ] Diseño de la base de datos.
+- [ ] Implementacion del sistema de autenticacion y gestion de usuarios.
+- [ ] Configuración del repositorio, control de versiones y documentación inicial
+
+SPRINT 2A:
+- [ ] Implementacion del registro y seguimiento de comidas.
+- [ ] Coneccion con la base de datos de alimentos.
+- [ ] Implementacion del calculo automatico de calorias y macronutrientes.
+- [ ] Pruebas unitarias y de integracion para las funcionalidades implementadas.
+
+SPRINT 3:
+- [ ] Implementacion del registro y seguimiento de actividades fisicas.
+- [ ] Implementacion del calculo automatico de calorias quemadas.
+- [ ] Pruebas unitarias y de integracion para las funcionalidades implementadas.
+
+
+SPRINT 4:
+- [ ] Implementacion del historial de registros diarios, semanales y mensuales.
+- [ ] Desarrollo de la interfaz de usuario para la visualizacion del historial.
+- [ ] Pruebas unitarias y de integracion para las funcionalidades implementadas.
+
+SPRINT 5:
+- [ ] Implementacion de la funcionalidad de recetas basadas en ingredientes disponibles.
+- [ ] Integracion de la informacion nutricional en las recetas.
+- [ ] Desarrollo de la interfaz de usuario para la visualizacion de recetas.
+
+SPRINt 6:
+- [ ] Desarrollo de la interfaz de usuario para todas las funcionalidades.
+- [ ] Pruebas de usabilidad y ajustes en la interfaz de usuario.
+
+### Diseno General y Arquitectura:
+
 - [ ] Frontend: HTML, CSS.
 - [ ] Backend: .Net (C#).
 - [ ] Base de Datos: SQL.
 - [ ] Integracion con API de alimentos: Open Food Facts API.
 - [ ] Autenticacion mediante OAuth 2.0 y OpenID Connect (OIDC)
+
+### DISEÑO DE BASE DE DATOS
+
+TABLA DE USUARIOS:
+- ID_USUARIO
+- NOMBRE_USUARIO 
+- CONTRASENA
+
+TABLA USARIOS_DETALLES:
+- ID_USUARIO
+- NOMBRE
+- APELLIDO
+- EDAD
+- SEXO
+- PESO
+- ALTURA
+- NIVEL_ACTIVIDAD_FISICA
+- OBJETIVO_NUTRICIONAL
+- CALORIAS_DIARIAS_OBJETIVO
+- PROTEINAS_DIARIAS_OBJETIVO
+- CARBOHIDRATOS_DIARIOS_OBJETIVO
+- GRASAS_DIARIAS_OBJETIVO
+- FECHA_CREACION
+- ULTIMA_ACTUALIZACION
+
+TABLA REGISTRO_COMIDAS:
+- ID_REGISTRO
+- ID_USUARIO
+- FECHA
+- HORA
+- ID_COMIDA (DESDE BASE DE DATOS DE ALIMENTOS)
+- CANTIDAD
+- CALORIAS
+- PROTEINAS
+- CARBOHIDRATOS
+- GRASAS
+
+TABLA REGISTRO_ACTIVIDADES:
+- ID_REGISTRO
+- ID_USUARIO
+- FECHA
+- HORA
+- TIPO_ACTIVIDAD
+- DURACION
+- INTENSIDAD
+- CALORIAS_QUEMADAS
+
 
 
 
