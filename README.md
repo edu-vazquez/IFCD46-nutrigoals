@@ -15,6 +15,8 @@ Funcionalidad:
 - [ ] Todo esto se ira actualizando a tiempo real.
 - [ ] El usuario podra ver un historial de sus registros diarios, semanales y mensuales, para analizar su progreso a lo largo del tiempo.
 - [ ] El usario podra consultar recetas a partir de ingredientes que tenga en casa y cada receta mostrara informacion nutricional, para incorporar a su plan alimenticio.
+- [ ]  Visualizar lo comido cuanto significa en actividad fisica. Eso se podria elegir la quivalencia con el tipo de actividad. <- INTERESANTE
+- [ ]  Los eccesos en cal diario enviar alarma.
 
 Diseno General y Arquitectura:
 - [ ] Frontend: HTML, CSS.
