@@ -32,7 +32,7 @@ SPRINT 1:
 - [ ] Implementacion del sistema de autenticacion y gestion de usuarios.
 - [ ] Configuración del repositorio, control de versiones y documentación inicial
 
-SPRINT 2A:
+SPRINT 2:
 - [ ] Implementacion del registro y seguimiento de comidas.
 - [ ] Coneccion con la base de datos de alimentos.
 - [ ] Implementacion del calculo automatico de calorias y macronutrientes.
